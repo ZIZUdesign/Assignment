@@ -6,6 +6,7 @@ import classes from './ErrorModal.module.css';
 
 const ErrorModal = (props) => {
     return (
+        // when you click on the backdrop and on the button the error modal goes away
         <div className={classes.backdrop} onClick={props.onConfirm} >
         <Card className= {classes.modal}>
             <header className={classes.header}>
@@ -15,7 +16,8 @@ const ErrorModal = (props) => {
                 <p>{props.message}</p>
             </div>
             <footer className={classes.actions}>
-                <Button onClick={props.OnConfirm}>Okay</Button>
+                
+                <Button onClick={props.OnConfirm}>Okay</Button> /
             </footer>
         </Card>
         </div>
